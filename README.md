@@ -1,1 +1,1 @@
-# simple-rsvp-app
+# Simple RSVP APP
