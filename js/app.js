@@ -19,6 +19,9 @@ form.addEventListener('submit', (e) => {
   checkbox.type = 'checkbox';
   label.appendChild(checkbox);
   li.appendChild(label);
+  const button = document.createElement('button');
+  button.textContent = 'Remove';
+  li.appendChild(button);
   ul.appendChild(li);
 });
 
@@ -26,7 +29,7 @@ ul.addEventListener('change', (e) => {
   const checkbox = e.target;
   const checked = checkbox.checked;
   const listItem = checkbox.parentNode.parentNode;
-  if(checked) {
+  if (checked) {
     listItem.className = 'responded';
   } else {
     listItem.className = '';
